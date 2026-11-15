@@ -18,8 +18,8 @@ SECRET_KEY = (
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'https://*. proxy.cognitiveclass.ai']
-CSRF_TRUSTED_ORIGINS = ['https://*.proxy.cognitiveclass.ai']
+ALLOWED_HOSTS = ['localhost', 'https://*.proxy.cognitiveclass.ai', '*.containers.appdomain.cloud']
+CSRF_TRUSTED_ORIGINS = ['https://*.proxy.cognitiveclass.ai', 'https://*.containers.appdomain.cloud']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
